@@ -41,12 +41,13 @@ int main(int argc, char** argv)
         if (text[i] >= 'a' && text[i] <= 'z')
         {
             text[i] = (text[i] - 'a' + key[j]) % 26 + 'a';
+            j = (j + 1) % keylen;
         }
         else if (text[i] >= 'A' && text[i] <= 'Z')
         {
             text[i] = (text[i] - 'A' + key[j]) % 26 + 'A';
+            j = (j + 1) % keylen;
         }
-        j = (j + 1) % keylen;
     }
 
     // print encrypted text
