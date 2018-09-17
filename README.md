@@ -1,5 +1,8 @@
 # CS50 PSET 2
 
+Requires gcc and CS50 library
+
+
 Caesar.c:
     Encrypt text using caesar cipher
 
